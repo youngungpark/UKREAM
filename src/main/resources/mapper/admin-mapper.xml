@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ukream.mapper.AdminMapper">
+
+    <!-- <resultMap type="com.ukream.dto.UserDTO" id="userDTO">
+        <result property="userId" column="user_id"/>
+        <result property="email" column="email"/>
+        <result property="password" column="password"/>
+        <result property="userLevel" column="user_level"/>
+        <result property="createdDate" column="created_date"/>
+        <result property="modifyDate" column="modify_date"/>
+    </resultMap> -->
+
+
+    <select id="findByUsers" resultType="UserDTO">
+        SELECT
+            user.* ,
+            user.user_id userId,
+            user.create_date createDate
+        FROM user
+    </select>
+
+
+
+
+   
+</mapper>
