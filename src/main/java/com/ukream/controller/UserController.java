@@ -47,7 +47,7 @@ public class UserController {
     public ResponseEntity<Void> login(@RequestBody UserDTO input, HttpSession session){
         UserDTO user = userService.login(input);
         SessionUtil.setLoginUserId(session, user.getUserId());
-        System.out.println("테스트1");
+        System.out.println("테스트10");
         return ResponseEntity.status(HttpStatus.OK).build();
     }
 
