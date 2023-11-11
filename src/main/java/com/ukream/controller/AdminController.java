@@ -12,21 +12,13 @@ import com.ukream.dto.UserDTO;
 import com.ukream.service.AdminService;
 
 @RestController
-<<<<<<< HEAD
 @RequestMapping("/admins")
-=======
-@RequestMapping("/admin")
->>>>>>> 4bcc9f1 (로그인/로그아웃 구현)
 public class AdminController {
     @Autowired
     private AdminService adminService;
 
     @LoginCheck(type = LoginCheck.UserType.ADMIN)
-<<<<<<< HEAD
-    @GetMapping("/usersSddddㄴ")
-=======
     @GetMapping("/users")
->>>>>>> 4bcc9f1 (로그인/로그아웃 구현)
     public List<UserDTO> findByUsers() {
         return adminService.findByUsers();
     }
