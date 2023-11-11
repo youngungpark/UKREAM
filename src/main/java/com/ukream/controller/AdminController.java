@@ -12,7 +12,7 @@ import com.ukream.dto.UserDTO;
 import com.ukream.service.AdminService;
 
 @RestController
-@RequestMapping("/admin")
+@RequestMapping("/admins")
 public class AdminController {
     @Autowired
     private AdminService adminService;
