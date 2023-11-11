@@ -18,7 +18,7 @@ public class AdminController {
     private AdminService adminService;
 
     @LoginCheck(type = LoginCheck.UserType.ADMIN)
-    @GetMapping("/usersSddㄴ")
+    @GetMapping("/usersSddddㄴ")
     public List<UserDTO> findByUsers() {
         return adminService.findByUsers();
     }
